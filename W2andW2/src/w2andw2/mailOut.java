@@ -1,8 +1,8 @@
 /////////////////////////////////////////////////////////////////////////////
 //
-//  Name:
-//  Author:
-//  Description:
+//  Name: mailOut
+//  Author: Kevin Sutton
+//  Description: This class handles sending mail out from the application.
 //
 //  Fields:
 //  Functions:
