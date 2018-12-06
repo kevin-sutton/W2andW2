@@ -1,8 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+///////////////////////////////////////////////////////////////////////////
+//
+//  Name: htmlReader
+//  Author: Kevin Sutton
+//  Description: This Class reads in html page data and displays it
+//  to the screen
+//
+//  Fields: Scanner inStream
+//  Functions:  htmlReader(String[] stylesheet, String[] htmlpage
+//              htmlReader(String[] htmlpage)
+//              static String[] getFile(String input)
+//  Parent:
+//  Children:
+//
+///////////////////////////////////////////////////////////////////////////
 package w2andw2;
 
 import java.awt.BorderLayout;
@@ -30,6 +40,15 @@ public class htmlReader {
     
     private static Scanner inStream = null;
     
+    ///////////////////////////////////////////////////////////////////////////////
+    //  Description: This function serves as the constructor for an html reader
+    //  object.
+    //
+    //  Inputs: A string array containing the lines for a css style sheet
+    //          A string array containing the lines for an html page
+    //
+    //  Outputs: A window on screen displaying the html page.
+    ///////////////////////////////////////////////////////////////////////////////
     public htmlReader(String[] stylesheet, String[] htmlpage)
     {
         SwingUtilities.invokeLater(new Runnable(){
@@ -75,6 +94,14 @@ public class htmlReader {
         });
     }
     
+    ///////////////////////////////////////////////////////////////////////////////
+    //  Description: This function serves as the constructor for an html reader
+    //  object.
+    //
+    //  Inputs: A string array containing the lines for an html page
+    //
+    //  Outputs: A window on screen displaying the html page.
+    ///////////////////////////////////////////////////////////////////////////////
     public htmlReader(String[] htmlpage)
     {
         SwingUtilities.invokeLater(new Runnable(){
@@ -115,6 +142,14 @@ public class htmlReader {
         });
     }
     
+    ///////////////////////////////////////////////////////////////////////////////
+    //  Description: This function reads in information from external files.
+    //
+    //  Inputs: A string containing the name of the file to be read in. This file 
+    //  must be a .txt file.
+    //
+    //  Outputs: A String array containing the lines in the file.
+    ///////////////////////////////////////////////////////////////////////////////
     public static String[] getFile(String input)
     {
         File in = new File(input + ".txt");
