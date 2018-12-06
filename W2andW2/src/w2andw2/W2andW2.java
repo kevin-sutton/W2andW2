@@ -26,6 +26,7 @@ public class W2andW2 {
      */
     public static void main(String[] args) {
         
+        mailOut.sendOut("test", "hope this works");
         htmlReader on = new htmlReader(htmlReader.getFile("htmlText"));
         
     }
