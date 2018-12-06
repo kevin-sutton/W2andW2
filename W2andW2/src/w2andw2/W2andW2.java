@@ -5,6 +5,8 @@
  */
 package w2andw2;
 
+import java.io.File;
+
 /**
  *
  * @author Kevin
@@ -16,7 +18,7 @@ public class W2andW2 {
      */
     public static void main(String[] args) {
         
-        new htmlReader(//css style sheet,//html page);
+        htmlReader on = new htmlReader(htmlReader.getFile("htmlText"));
         
     }
     
